@@ -1747,6 +1747,7 @@ questionaire() {
     option MELLOW_BRD_2         'Mellow EASY-BRD v2.x (with CANbus)'
     option AFC_LITE_1           'AFC Lite v1.0'
     option SKR_PICO_1 'BTT SKR Pico v1.0'
+    option OCTOPUS              'BTT OCTOPUS v1.1'
     option OTHER                'Not in list / Unknown'
     prompt_option opt 'MCU Type' "${OPTIONS[@]}"
     case $opt in
@@ -1793,6 +1794,10 @@ questionaire() {
         "$SKR_PICO_1")
             _hw_brd_type="SKR_PICO_1"
             pattern="Klipper_rp2040"
+            ;;
+        "$OCTOPUS")
+            _hw_brd_type="OCTOPUS_v1.1"
+            pattern="Klipper_stm32"
             ;;
         *)
             _hw_brd_type="unknown"

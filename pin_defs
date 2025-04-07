@@ -640,75 +640,69 @@ PIN[B,SKR_PICO_1,gear_sensor_9_pin]="";
 PIN[B,SKR_PICO_1,gear_sensor_10_pin]="";
 PIN[B,SKR_PICO_1,gear_sensor_11_pin]="";
 
-# Blocks_AMU with Octopus pins
+# OCTOPUS_v1.1 with Octopus pins
 
-PIN[B,Blocks_AMU,gear_uart_pin]="PD5"; #falta 
-PIN[B,Blocks_AMU,gear_step_pin]="PF13";
-PIN[B,Blocks_AMU,gear_dir_pin]="PF12";
-PIN[B,Blocks_AMU,gear_enable_pin]="PF14";
-PIN[B,Blocks_AMU,gear_diag_pin]="PD2"; #falta
-PIN[B,Blocks_AMU,gear_1_uart_pin]="PD0"; #falta
-PIN[B,Blocks_AMU,gear_1_step_pin]="PG0";
-PIN[B,Blocks_AMU,gear_1_dir_pin]="PG1";
-PIN[B,Blocks_AMU,gear_1_enable_pin]="PF15";
-PIN[B,Blocks_AMU,gear_1_diag_pin]="PC10"; #falta
-PIN[B,Blocks_AMU,gear_2_uart_pin]="PE1"; #falta
-PIN[B,Blocks_AMU,gear_2_step_pin]="PF11";
-PIN[B,Blocks_AMU,gear_2_dir_pin]="PG3";
-PIN[B,Blocks_AMU,gear_2_enable_pin]="PG5";
-PIN[B,Blocks_AMU,gear_2_diag_pin]="PE4"; #falta
-PIN[B,Blocks_AMU,gear_3_uart_pin]="PC6"; #falta
-PIN[B,Blocks_AMU,gear_3_step_pin]="PG4";
-PIN[B,Blocks_AMU,gear_3_dir_pin]="PC1";
-PIN[B,Blocks_AMU,gear_3_enable_pin]="PA0";
-PIN[B,Blocks_AMU,gear_3_diag_pin]="PC8"; #falta
+PIN[B,OCTOPUS_v1.1,gear_uart_pin]="PC4";  # Correct UART for MOTOR0
+PIN[B,OCTOPUS_v1.1,gear_step_pin]="PF13";
+PIN[B,OCTOPUS_v1.1,gear_dir_pin]="PF12";
+PIN[B,OCTOPUS_v1.1,gear_enable_pin]="PF14";
+PIN[B,OCTOPUS_v1.1,gear_diag_pin]="";   # Correct DIAG for MOTOR0 (Shares pin with Probe/BLTouch)
 
-PIN[B,Blocks_AMU,selector_uart_pin]="";
-PIN[B,Blocks_AMU,selector_step_pin]="";
-PIN[B,Blocks_AMU,selector_dir_pin]="";
-PIN[B,Blocks_AMU,selector_enable_pin]="";
-PIN[B,Blocks_AMU,selector_diag_pin]="";
-PIN[B,Blocks_AMU,selector_endstop_pin]="";
-PIN[B,Blocks_AMU,selector_servo_pin]="";
+# Gear Motor 1 (Uses MOTOR1 Socket: Step=PG0, Dir=PG1, En=PF15)
+PIN[B,OCTOPUS_v1.1,gear_1_uart_pin]="PD11";  # Correct UART for MOTOR1
+PIN[B,OCTOPUS_v1.1,gear_1_step_pin]="PG0";
+PIN[B,OCTOPUS_v1.1,gear_1_dir_pin]="PG1";
+PIN[B,OCTOPUS_v1.1,gear_1_enable_pin]="PF15";
+PIN[B,OCTOPUS_v1.1,gear_1_diag_pin]="";   # Correct DIAG for MOTOR1 (Shares pin with Y-STOP)
 
-PIN[B,Blocks_AMU,encoder_pin]="";
-PIN[B,Blocks_AMU,neopixel_pin]="PE14";
-PIN[B,Blocks_AMU,gate_sensor_pin]="PC4";
-PIN[B,Blocks_AMU,pre_gate_0_pin]="PC5";
-PIN[B,Blocks_AMU,pre_gate_1_pin]="PB0";
-PIN[B,Blocks_AMU,pre_gate_2_pin]="PB1";
-PIN[B,Blocks_AMU,pre_gate_3_pin]="PB2";
-PIN[B,Blocks_AMU,pre_gate_4_pin]="";
-PIN[B,Blocks_AMU,pre_gate_5_pin]="";
-PIN[B,Blocks_AMU,pre_gate_6_pin]="";
-PIN[B,Blocks_AMU,pre_gate_7_pin]="";
-PIN[B,Blocks_AMU,pre_gate_8_pin]="";
-PIN[B,Blocks_AMU,pre_gate_9_pin]="";
-PIN[B,Blocks_AMU,pre_gate_10_pin]="";
-PIN[B,Blocks_AMU,pre_gate_11_pin]="";
+# Gear Motor 2 (Uses MOTOR2_PLUG Socket: Step=PF11, Dir=PG3, En=PG5)
+PIN[B,OCTOPUS_v1.1,gear_2_uart_pin]="PC6";  # Correct UART for MOTOR2_PLUG
+PIN[B,OCTOPUS_v1.1,gear_2_step_pin]="PF11";
+PIN[B,OCTOPUS_v1.1,gear_2_dir_pin]="PG3";
+PIN[B,OCTOPUS_v1.1,gear_2_enable_pin]="PG5";
+PIN[B,OCTOPUS_v1.1,gear_2_diag_pin]="";  # Correct DIAG for MOTOR2_PLUG (Shares pin with X-STOP)
 
-PIN[B,Blocks_AMU,gear_sensor_0_pin]="PG6"; #modificado
-PIN[B,Blocks_AMU,gear_sensor_1_pin]="PG9"; #modificado
-PIN[B,Blocks_AMU,gear_sensor_2_pin]="PG10"; #modificado
-PIN[B,Blocks_AMU,gear_sensor_3_pin]="PG11"; #modificado
-PIN[B,Blocks_AMU,gear_sensor_4_pin]="PG12"; #modificado
-PIN[B,Blocks_AMU,gear_sensor_5_pin]="";
-PIN[B,Blocks_AMU,gear_sensor_6_pin]="";
-PIN[B,Blocks_AMU,gear_sensor_7_pin]="";
-PIN[B,Blocks_AMU,gear_sensor_8_pin]="";
-PIN[B,Blocks_AMU,gear_sensor_9_pin]="";
-PIN[B,Blocks_AMU,gear_sensor_10_pin]="";
-PIN[B,Blocks_AMU,gear_sensor_11_pin]="";
+# Gear Motor 3 (Uses MOTOR3 Socket: Step=PG4, Dir=PC1, En=PA0)
+PIN[B,OCTOPUS_v1.1,gear_3_uart_pin]="PC7";  # Correct UART for MOTOR3
+PIN[B,OCTOPUS_v1.1,gear_3_step_pin]="PG4";
+PIN[B,OCTOPUS_v1.1,gear_3_dir_pin]="PC1";
+PIN[B,OCTOPUS_v1.1,gear_3_enable_pin]="PA2";
+PIN[B,OCTOPUS_v1.1,gear_3_diag_pin]="";  
 
-PIN[B,Blocks_AMU,spooler_en_0_pin]="PA2";
-PIN[B,Blocks_AMU,spooler_en_1_pin]="PA5";
-PIN[B,Blocks_AMU,spooler_en_2_pin]="PB13";
-PIN[B,Blocks_AMU,spooler_en_3_pin]="PD11";
-PIN[B,Blocks_AMU,spooler_rwd_0_pin]="PA0";
-PIN[B,Blocks_AMU,spooler_rwd_1_pin]="PA6";
-PIN[B,Blocks_AMU,spooler_rwd_2_pin]="PB14";
-PIN[B,Blocks_AMU,spooler_rwd_3_pin]="PD12";
-PIN[B,Blocks_AMU,spooler_fwd_0_pin]="PA1";
-PIN[B,Blocks_AMU,spooler_fwd_1_pin]="PA7";
-PIN[B,Blocks_AMU,spooler_fwd_2_pin]="PB15";
-PIN[B,Blocks_AMU,spooler_fwd_3_pin]="PD13";
+PIN[B,OCTOPUS_v1.1,selector_uart_pin]="";
+PIN[B,OCTOPUS_v1.1,selector_step_pin]="";
+PIN[B,OCTOPUS_v1.1,selector_dir_pin]="";
+PIN[B,OCTOPUS_v1.1,selector_enable_pin]="";
+PIN[B,OCTOPUS_v1.1,selector_diag_pin]="";
+PIN[B,OCTOPUS_v1.1,selector_endstop_pin]="";
+PIN[B,OCTOPUS_v1.1,selector_servo_pin]="";
+
+PIN[B,OCTOPUS_v1.1,encoder_pin]="";
+PIN[B,OCTOPUS_v1.1,neopixel_pin]="PB0";
+PIN[B,OCTOPUS_v1.1,gate_sensor_pin]="PG11 ";
+PIN[B,OCTOPUS_v1.1,pre_gate_0_pin]="PG12";
+PIN[B,OCTOPUS_v1.1,pre_gate_1_pin]="PG13";
+PIN[B,OCTOPUS_v1.1,pre_gate_2_pin]="PG14";
+PIN[B,OCTOPUS_v1.1,pre_gate_3_pin]="PG15";
+PIN[B,OCTOPUS_v1.1,pre_gate_4_pin]="";
+PIN[B,OCTOPUS_v1.1,pre_gate_5_pin]="";
+PIN[B,OCTOPUS_v1.1,pre_gate_6_pin]="";
+PIN[B,OCTOPUS_v1.1,pre_gate_7_pin]="";
+PIN[B,OCTOPUS_v1.1,pre_gate_8_pin]="";
+PIN[B,OCTOPUS_v1.1,pre_gate_9_pin]="";
+PIN[B,OCTOPUS_v1.1,pre_gate_10_pin]="";
+PIN[B,OCTOPUS_v1.1,pre_gate_11_pin]="";
+
+PIN[B,OCTOPUS_v1.1,gear_sensor_0_pin]=""; 
+PIN[B,OCTOPUS_v1.1,gear_sensor_1_pin]=""; 
+PIN[B,OCTOPUS_v1.1,gear_sensor_2_pin]=""; 
+PIN[B,OCTOPUS_v1.1,gear_sensor_3_pin]=""; 
+PIN[B,OCTOPUS_v1.1,gear_sensor_4_pin]="";
+PIN[B,OCTOPUS_v1.1,gear_sensor_5_pin]="";
+PIN[B,OCTOPUS_v1.1,gear_sensor_6_pin]="";
+PIN[B,OCTOPUS_v1.1,gear_sensor_7_pin]="";
+PIN[B,OCTOPUS_v1.1,gear_sensor_8_pin]="";
+PIN[B,OCTOPUS_v1.1,gear_sensor_9_pin]="";
+PIN[B,OCTOPUS_v1.1,gear_sensor_10_pin]="";
+PIN[B,OCTOPUS_v1.1,gear_sensor_11_pin]="";
+
